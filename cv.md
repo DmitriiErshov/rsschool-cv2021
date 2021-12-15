@@ -30,6 +30,8 @@ My name is Dmitry, and at the age of 33 I realized that I wanted to change my jo
 
 ---
 >**Code example:** 
+---
+![Code](image/code.jpg)
 ```
         function app() {
         const buttons = document.querySelectorAll('.button');
