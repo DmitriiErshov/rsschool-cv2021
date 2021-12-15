@@ -30,33 +30,8 @@ My name is Dmitry, and at the age of 33 I realized that I wanted to change my jo
 
 ---
 >**Code example:** 
----
-![Code](image/code.jpg)
-```
-        function app() {
-        const buttons = document.querySelectorAll('.button');
-        const cards = document.querySelectorAll('.portfolio__item');
-        
-        function filter(category, items) {
-            items.forEach((item) => {
-                const isItemFiltered = !item.classList.contains(category)
-                const isShowAll = category.toLowerCase() === 'all'
-                if (isItemFiltered && !isShowAll) {
-                    item.classList.add('hide')
-                } else {
-                    item.classList.remove('hide')
-                }
-            })
-        }
 
-        buttons.forEach((button) => {
-            button.addEventListener('click', () => {
-                const currentCategory = button.dataset.filter
-                filter(currentCategory, cards)
-            })
-        })
-        }
-```
+![Code](image/code.jpg)
 
 ---
 >**Courses:**  
