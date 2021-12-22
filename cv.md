@@ -27,7 +27,7 @@ I am currently learning to be a JS developer.
 ---
 >**Code example:** 
 
-![Code](/image/jscodefilter.png)
+![Code]()
 ---
 >**Courses:**  
 RS school JS / FRONT-END. STAGE 0
