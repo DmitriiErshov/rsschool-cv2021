@@ -4,6 +4,8 @@
 Junior Frontend Developer
 ---
 
+&nbsp;
+
 >**Contacts**
 
 
@@ -17,12 +19,17 @@ Junior Frontend Developer
 
 ---
 
+&nbsp;
+
 >**About myself:** My name is Dmitry, and at the age of 33 I realized that I wanted to change my job as an engineer. In the summer of 2021. I tried to write code for the first time.
 I am currently learning to be a JS developer.
 ---
 
+&nbsp;
+
 >**Skills and Proficiency:** 
 
+&nbsp;
 
 |            | lvl
 |------------|:--------: 
@@ -31,13 +38,27 @@ I am currently learning to be a JS developer.
 |*Photoshop* | (basic)
 
 ---
+
+&nbsp;
+
 >**Code example:** 
 
+&nbsp;
+
 ![Code](/image/js_code_filter.png)
+
 ---
+
+&nbsp;
+
 >**Courses:**  
+
+&nbsp;
+
 RS school JS / FRONT-END. STAGE 0
 ---
+
+&nbsp;
 
 >**Languages:**
 
