@@ -1,7 +1,9 @@
-######rsschool-cv
+rsschool-cv
+&nbsp;
 ---
 >**Dmitrii Ershov**
 Junior Frontend Developer
+&nbsp;
 ---
 
 &nbsp;
@@ -56,6 +58,9 @@ I am currently learning to be a JS developer.
 &nbsp;
 
 RS school JS / FRONT-END. STAGE 0
+
+&nbsp;
+
 ---
 
 &nbsp;
