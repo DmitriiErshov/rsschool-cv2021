@@ -53,7 +53,7 @@ header{
     display: flex;
     position: relative;
     /* background-color: grey; */
-    background-image: url('/image/mainblock__image.jpg');
+    background-image: url('./image/mainblock__image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -410,7 +410,7 @@ progress::-webkit-progress-value{
     justify-content: space-evenly;
     color: white;
     padding: 20px 0px;
-    background-image: url(/image/mainblock__bottom.png);
+    background-image: url(./image/mainblock__bottom.png);
     background-repeat: no-repeat;
     background-size: cover;
     /* position: absolute; */
