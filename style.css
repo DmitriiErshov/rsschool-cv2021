@@ -106,7 +106,7 @@ header{
 .mainheader__text{
     color: white;
     position: relative;
-    padding:  0px 0px 30px 0px;
+    padding:  0px 0px 50px 0px;
 }
 .mainheader__text:after{
     content: '';
