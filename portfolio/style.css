@@ -1,19 +1,224 @@
+:root {
+    --bg-dark: #000000;
+    --white: #FFFFFF;
+    --gold: #bdae82;
+}
+
 *{
     padding: 0;
     margin: 0;
     border: 0;
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
+    font-family: 'inter';
+    font-size: 20px;
+    box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+
+header, main{
+    background-color: var(--bg-dark);
 }
 
-.container {
+.header__container {
     max-width: 1440px;
+    height: 90px;
     margin: 0 auto;
-    padding: 0 20px;
+    background: url('./assets/img/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+.header__block{
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.logo__header{
+    width: 50px;
+    height: 50px;
+    background-color: var(--white);
+    margin: 20px;
+    -webkit-mask-image: url(./assets/svg/logo-header.svg);
+    -webkit-mask-size: cover;
+    transition: 1s;
+}
+
+.logo__header:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
   }
+
+.nav__header{
+    
+}
+.nav__list{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    width: 497px;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.nav__item a, .lang__header a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.lang__header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px 20px 0;
+}
+
+
+
+.container{
+    max-width: 1440px;
+    color: var(--white);
+    margin: 0 auto;
+}
+
+
+.hero{
+    min-height: 910px;
+    background-image: url('./assets/img/bg.jpg');
+    background-position: center -90px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}    
+
+.mainblock{
+    position: absolute;
+    margin-top: 250px;
+    margin: 80px;
+    width: 550px;
+    height: 330px;
+}
+
+h1{
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 120px;
+}
+
+p{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.btn{
+    position: absolute;
+    width: 220px;
+    height: 55px;
+    text-align: center;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn__gold-black{
+    position: absolute;
+    bottom: 0;
+    color: var(--bg-dark);
+    background: var(--gold);
+    transition: 1s;
+}
+
+.btn__gold-black:hover{
+    color: var(--gold);
+    background-color: transparent;
+    border: 1px solid var(--gold);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.skills{
+    min-height: 482px;
+    background-position: center -90px;
+    
+}
+
+.mainblock__title{
+    width: 700px;
+    margin: 0 auto;
+}
+
+.section-title{
+    overflow: hidden;
+    text-align: center;
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    color: var(--gold);
+}
+
+.section-title span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.section-title:before,
+.section-title:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 2px;
+    background-color: var(--gold);
+    position: relative;
+}
+.section-title:before {
+    margin-left: -100%;
+    left: -14px;
+}
+.section-title:after {
+    margin-right: -100%;
+    right: -14px;
+}
+
+.skills__items{
+    display: flex;
+    width: 1400px;
+    margin: 0 auto;
+    margin-top: 60px;
+    justify-content: space-between
+}
+
+.skills__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 240px;
+    justify-content: space-between;
+}
+
+.skill__title{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.skill__subtitle{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+}
