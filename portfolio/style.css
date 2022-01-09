@@ -4,13 +4,17 @@
     --gold: #bdae82;
 }
 
-*{
+*,
+*::after,
+*::before{
     padding: 0;
     margin: 0;
-    border: 0;
+    box-sizing: border-box;
+}
+body{
     font-family: 'inter';
     font-size: 20px;
-    box-sizing: border-box;
+    color: var(--white);
 }
 
 html{
@@ -21,7 +25,7 @@ header, main, footer{
     background-color: var(--bg-dark);
 }
 
-.header__container {
+.header__block {
     max-width: 1440px;
     height: 90px;
     margin: 0 auto;
@@ -95,8 +99,8 @@ header, main, footer{
 
 .mainblock{
     position: absolute;
-    margin-top: 250px;
-    margin: 80px;
+    margin-top: 180px;
+    margin-left: 80px;
     width: 550px;
     height: 330px;
 }
@@ -120,6 +124,11 @@ p{
 
 
 .btn{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
     width: 220px;
     height: 55px;
     text-align: center;
@@ -210,10 +219,15 @@ p{
     align-items: center;
     width: 320px;
     height: 240px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+}
+
+.skill__img{
+    margin: 0 0 40px 0;
 }
 
 .skill__title{
+    margin: 0 0 25px 0;
     font-family: Inter;
     font-style: normal;
     font-weight: bold;
@@ -223,6 +237,7 @@ p{
 }
 
 .skill__subtitle{
+    margin: 0;
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
@@ -232,15 +247,14 @@ p{
 }
 
 .portfolio{
-    margin: -10px;
+    margin: -3px;
 }
 
 .portfolio__btns{
     display: flex;
     width: 895px;
     margin: 0 auto;
-    margin-top: 60px;
-    margin-bottom: 50px;
+    padding: 60px 0;
     justify-content: space-between
 }
 
@@ -249,7 +263,7 @@ p{
     background-color: transparent;
     border: 1px solid var(--gold);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: 1s;
+    transition: 0.5s all;
 }
 
 .btn__black-gold:hover{
@@ -259,41 +273,47 @@ p{
 }
 
 .portfolio__items{
-    box-sizing: border-box;
-    margin: 0 -15px;
+    /* box-sizing: border-box; */
+    /* margin: 0 -20px; */
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
+    transition: 0.5s;
+    padding: 0 0 0 22px;
+    margin: 0 0 100px 0;
+    gap: 20px;
 }
 
 .portfolio__column{
-    flex: 0 1 33.333%;
-    padding: 0 15px;
-    margin: 0 0 30px 0;
+    /* flex: 0 1 33.333%;
+    padding: 0 20px;
+    margin: 0 0 30px 0; */
     /* flex: 0 1 33.333%; */
 }
 
 .portfolio__item img{
-    max-width: 100%;
+    /* max-width: 560px; */
 }
+
+
+
+ 
 
 .video-player{
     background-image: url('./assets/img/img-video-player.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 95px 10px 10px 10px;
-
-}
-
-.video-player{
-    /* position: absolute; */
-    margin: 55px 0 100px 0;
+    margin: 55px 0 100px 20px;
     text-align: center;
     background-color: transparent;
     width: 1400px;
     height: 705px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .price__list{
     display: flex;
@@ -306,7 +326,7 @@ p{
 .price__item{
     display: inline-flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: column;
     width: 450px;
     height: 505px;
@@ -341,7 +361,7 @@ p{
 }
 
 .price{
-    margin: 100px 0;
+    margin: 100px 0 98px 0;
 }
 
 .contacts{
@@ -349,7 +369,7 @@ p{
     background: url('./assets/img/bg-contacts.jpg');
     background-size: auto 700px;
     background-position: center center;
-    margin-top: 60px;
+    margin-top: 62px;
 }
 
 .contacts__block{
@@ -375,7 +395,7 @@ p{
 }
 
 .contacts__contacts-me{
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .contacts__input{
@@ -425,7 +445,7 @@ p{
 
 
 .contacts__btn{
-    margin: 30px 0;
+    margin: 10px 0;
 }
 
 .footer__block{
@@ -469,3 +489,29 @@ p{
     text-align: center;
     align-items: center;
 }
+
+.anime{
+    transform: scale(0);
+    opacity: 0;
+}
+
+.hide{
+    animation-name: hide;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hide {
+    0%{
+        visibility: visible;
+        height: 560px;
+
+    }
+    100% {
+        visibility: hidden;       
+        width: 0;
+        height: 0;
+        margin: 0;
+    }
+  
+  }
