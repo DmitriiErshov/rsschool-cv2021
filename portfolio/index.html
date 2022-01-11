@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -86,20 +87,20 @@
                 <div class="mainblock__title">
                     <h2 class="section-title"><span>Portfolio</span></h2>
                 </div>
-                <div class="portfolio__btns">
-                    <div class="portfolio__btn ">
+                <ul class="portfolio__btns">
+                    <li class="portfolio__btn ">
                         <button data-filter="winter" class="button btn btn__black-gold">Winter</button>
-                    </div>
-                    <div class="portfolio__btn ">
+                    </li>
+                    <li class="portfolio__btn ">
                         <button data-filter="spring" class="button btn btn__black-gold">Spring</button>
-                    </div>
-                    <div class="portfolio__btn ">
+                    </li>
+                    <li class="portfolio__btn ">
                         <button data-filter="summer" class="button btn btn__black-gold">Summer</button>
-                    </div>
-                    <div class="portfolio__btn ">
+                    </li>
+                    <li class="portfolio__btn ">
                         <button data-filter="autumn" class="button btn btn__black-gold">Autumn</button>
-                    </div>
-                </div>
+                    </li>
+                </ul>
                 <div class="portfolio__items gallery">
                     <div class="portfolio__column ">
                        <a href="./assets/img/img-winter-1.jpg" class="winter portfolio__item"><img src="./assets/img/img-winter-1.jpg" alt=""></a>
@@ -175,12 +176,15 @@
                 
             </section>
             <section class="contacts" id="contacts">
+                <div class="mainblock__title title__contacts">
+                    <h2 class="section-title"><span>Contacts</span></h2>
+                </div>
                 <div class="contacts__block">
                     <div class="contacts__inputs">
                         <div class="contacts__contacts-me"><span>Contact me</span></div>
-                        <input class="contacts__input" type="text" name="E-mail" placeholder="E-mail">
-                        <input class="contacts__input" type="text" name="Phone" placeholder="Phone">
-                        <input class="contacts__input input__message" type="text" name="message" placeholder="Message">
+                        <input class="contacts__input" type="email" name="E-mail" placeholder="E-mail">
+                        <input class="contacts__input" type="tel" name="Phone" placeholder="Phone">
+                        <textarea class="contacts__input input__message" placeholder="Message"></textarea>
                         <button class="btn btn__gold btn__gold-black contacts__btn">Send message</button>
                     </div>
                 </div>
@@ -193,10 +197,10 @@
                 <div class="footer__github_block">
                     <p>©</p>
                     <p>2022</p>
-                    <a href=""><p>github</p></a>
+                    <a href="https://github.com/DmitriiErshov"><p>github</p></a>
                 </div>
                 <div class="footer__rsschool_block">
-                    <a href=""><p>Rolling Scopes School</p></a>
+                    <a href="https://rs.school/js-stage0/"><p>Rolling Scopes School</p></a>
                 </div>
                 <div class="footer__social_block">
                     <a href="" class="social__block"><img src="./assets/svg/logo-instagram.svg" alt="instagram"></a>

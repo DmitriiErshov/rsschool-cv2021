@@ -251,6 +251,7 @@ p{
 }
 
 .portfolio__btns{
+    list-style-type: none;
     display: flex;
     width: 895px;
     margin: 0 auto;
@@ -372,6 +373,10 @@ p{
     margin-top: 62px;
 }
 
+.title__contacts{
+    display: none;
+}
+
 .contacts__block{
     padding-top: 60px;
     padding-left: 970px;
@@ -434,6 +439,9 @@ p{
     height: 100px;
 }
 
+textarea{
+    resize: none;
+}
 
 .contacts__input:focus {
     color: var(--gold);
