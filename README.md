@@ -1,1 +1,1 @@
-# rsschool-cv
+https://rolling-scopes-school.github.io/DMITRIIERSHOV-JSFEPRESCHOOL/portfolio/
