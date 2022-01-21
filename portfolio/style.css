@@ -25,6 +25,13 @@ header, main, footer{
     background-color: var(--bg-dark);
 }
 
+.container{
+    max-width: 1440px;
+    color: var(--white);
+    margin: 0 auto;
+}
+    
+
 .header__block {
     max-width: 1440px;
     height: 90px;
@@ -56,6 +63,9 @@ header, main, footer{
     contrast(87%);
   }
 
+.header__burger{
+    display: none;
+}
 
 .nav__list{
     display: flex;
@@ -64,7 +74,7 @@ header, main, footer{
     align-items: center;
     width: 497px;
     height: 50px;
-    margin-left: 783px;
+    /* margin-left: 783px; */
 }
 
 .nav__item a, .lang__header a{
@@ -78,13 +88,39 @@ header, main, footer{
     align-items: center;
 }
 
+/* .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 2;
+  } */
+  
+  /* .line {
+    width: 80%;
+    height: 2px;
+    background: var(--white);
+    margin: 3px 0;
+    z-index: 15;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hamburger.open .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .hamburger.open .line2 {
+    opacity: 0;
+  }
+  
+  .hamburger.open .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  } */
 
-
-.container{
-    max-width: 1440px;
-    color: var(--white);
-    margin: 0 auto;
-}
 
 
 .hero{
@@ -96,6 +132,24 @@ header, main, footer{
     position: relative;
 
 }    
+.ibg{
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    }
+    
+    .ibg img{
+    
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    }
 
 .mainblock{
     position: absolute;
@@ -177,12 +231,6 @@ p{
 }
 
 .section-title span {
-    text-align: center;
-    font-family: Merriweather;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 80px;
     display: inline-block;
     vertical-align: middle;
 }
@@ -523,3 +571,201 @@ textarea{
     }
   
   }
+
+  @media (max-width: 767px) {
+    .hero{
+        min-height: 590px;
+    }
+    .mainblock{
+        width: 390px;
+        margin-top: 80px;
+        margin-left: 60px;
+    }
+
+    .btn__gold-black {
+        margin-top: 30px;
+    }
+    .header__block{
+        justify-content: space-between
+    }
+    .logo__header {
+    margin-left: 60px;
+    }
+
+    .hero{
+    
+        background-image: url('./assets/img/bg-tablet.jpg');
+        background-position: center -90px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    h1{
+        font-family: Merriweather;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 64px;
+    }
+    .nav__list{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav__item{
+        padding: 10px;
+    }
+    .lang__header{
+        margin-right: 68px;
+    }
+    .header__burger{
+        
+        z-index: 5;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+    }
+
+    .header__burger span,
+    .header__burger::before,
+    .header__burger::after{
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: var(--white);
+    }
+
+    .container{
+        max-width: 767px;
+        color: var(--white);
+        margin: 0 auto;
+    }
+    .mainblock__title{
+        width: 364px;
+        margin: 0 auto;
+    }
+    .section-title{
+        font-family: Merriweather;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+    }
+    
+    .section-title span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .section-title:before,
+    .section-title:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        height: 2px;
+        background-color: var(--gold);
+        position: relative;
+    }
+    .section-title:before {
+        margin-left: -100%;
+        left: -14px;
+    }
+    .section-title:after {
+        margin-right: -100%;
+        right: -14px;
+    }
+    .skills{
+       
+        
+    }
+    .skills__items{
+        margin-top: 36px;
+        max-width: 728px;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 0 1 25%;
+        justify-content: center;
+        align-items: center;
+        
+       
+    }
+    .skills__item{
+        display: flex;
+        width: 300px;
+        height: 224px;
+        margin-bottom: 40px;|
+    }
+
+    .portfolio{
+        margin: 120px 0 0 0;
+    }
+    .portfolio__btns{
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        width: 445px;
+        margin: 0 auto;
+        padding: 70px 0 60px 0;
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    .portfolio__column{
+        margin: 0 auto;
+    }
+
+    .portfolio__items{
+        padding: 0;
+    }
+    
+    .video{
+        margin: -5px 0 0 0;
+    }
+    .video-player{
+        width: 767px;
+        height: 418px;
+        background-image: url('./assets/img/img-video-player-tablet.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 70px 0 0 0;
+    }
+    .btn_play-hover{
+        height: 75px;
+        width: 75px;
+    }
+    .price__list{
+        display: block;
+        margin-top: 65px;
+        padding: 0 174px;
+    }
+    .price__item{
+        margin-bottom: 50px;
+        width: 420px;
+    }
+    .contacts{
+        min-height: 600px;
+        background-size: auto 600px;
+    }
+    .contacts__block{
+        
+        padding: 0;
+    }
+    .footer__block{
+        display: block;
+    }
+    .footer__github_block, .footer__social_block{
+        margin: 0 auto;
+    }
+    .footer__rsschool_block{
+        margin: 0;
+        text-align: center;
+    }
+} 
